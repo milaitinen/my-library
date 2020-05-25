@@ -1,0 +1,27 @@
+<h1>
+  <%= @book.title %>, 
+  <%= @book.volume %>巻
+</h1>
+
+<p>
+  <strong>作者:</strong>
+  <%= @book.author %>
+</p>
+
+<p>
+  <strong>ジャンル:</strong>
+  <%= @book.genre %>
+</p>
+
+<p>
+  <strong>発売年:</strong>
+  <%= @book.published_year %>
+</p>
+
+<p>
+  <strong>メモ:</strong>
+  <%= @book.comments %>
+</p>
+
+<%= link_to '編集', edit_book_path(@book) %>
+<%= link_to '戻る', books_path %>
